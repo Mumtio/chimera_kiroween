@@ -12,6 +12,8 @@ A neural-themed AI memory management system that stitches together multiple LLM 
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)
 ![Three.js](https://img.shields.io/badge/Three.js-3D-orange)
 
+## ⭐ Watch the [Promo Video](https://youtu.be/5OHoeqZk0Es)
+
 ## 🧬 Why Chimera Protocol is the Ultimate Frankenstein Project
 
 In Greek mythology, the Chimera was a monstrous creature made of parts from different animals - a lion's head, a goat's body, and a serpent's tail. **Chimera Protocol** embodies this spirit by stitching together competing AI providers that were never meant to work together into one unified, collaborative system.
