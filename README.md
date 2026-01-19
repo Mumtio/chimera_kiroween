@@ -75,12 +75,11 @@ Chimera Protocol combines different AI providers under one system, creating a co
 
 This repository contains two main submodules:
 
+```
 Chimera_Protocol/
-├── Backend/ # Django REST API (Main backend system)
-└── Frontend/ # React/TypeScript UI (Frontend interface)
-
-markdown
-Copy code
+├── Backend/   # Django REST API (Main backend system)
+└── Frontend/  # React/TypeScript UI (Frontend interface)
+```
 
 ---
 
@@ -119,99 +118,124 @@ Copy code
 ```bash
 git clone --recurse-submodules https://github.com/your-username/Chimera_Protocol.git
 cd Chimera_Protocol
-Backend Setup
-Create Virtual Environment
+```
 
-bash
-Copy code
+### Backend Setup
+
+**Create Virtual Environment**
+
+```bash
 python -m venv .venv
 source .venv/bin/activate  # Windows: .venv\Scripts\activate
-Install Dependencies
+```
 
-bash
-Copy code
+**Install Dependencies**
+
+```bash
 pip install -r requirements.txt
-Configure Environment
-Copy .env.example to .env and update the configuration as needed.
+```
 
-Generate Encryption Key
+**Configure Environment**
 
-bash
-Copy code
+Copy `.env.example` to `.env` and update the configuration as needed.
+
+**Generate Encryption Key**
+
+```bash
 python generate_key.py
-Apply Migrations
+```
 
-bash
-Copy code
+**Apply Migrations**
+
+```bash
 python manage.py migrate
-Run Server
+```
 
-bash
-Copy code
+**Run Server**
+
+```bash
 python manage.py runserver
-Frontend Setup
-Install Dependencies
+```
 
-bash
-Copy code
+### Frontend Setup
+
+**Install Dependencies**
+
+```bash
 npm install
-Configure Environment
-Copy .env.example to .env.local and set the API base URL.
+```
 
-Run Development Server
+**Configure Environment**
 
-bash
-Copy code
+Copy `.env.example` to `.env.local` and set the API base URL.
+
+**Run Development Server**
+
+```bash
 npm run dev
-API Endpoints
-Endpoint	Description
-POST /api/auth/register	User registration
-POST /api/auth/login	JWT authentication
-GET /api/workspaces	List all workspaces
-POST /api/conversations/{id}/messages	Send a chat message
-POST /api/conversations/{id}/inject-memory	Inject memory context
-POST /api/memories/search	Search memories
-POST /api/mcp/remember	Store memory via MCP
-POST /api/mcp/inject	Inject memory via MCP
+## API Endpoints
 
-Development Setup
-Backend
-Start Server
+| Endpoint | Description |
+|----------|-------------|
+| `POST /api/auth/register` | User registration |
+| `POST /api/auth/login` | JWT authentication |
+| `GET /api/workspaces` | List all workspaces |
+| `POST /api/conversations/{id}/messages` | Send a chat message |
+| `POST /api/conversations/{id}/inject-memory` | Inject memory context |
+| `POST /api/memories/search` | Search memories |
+| `POST /api/mcp/remember` | Store memory via MCP |
+| `POST /api/mcp/inject` | Inject memory via MCP |
 
-bash
-Copy code
+---
+
+## Development Setup
+
+### Backend
+
+**Start Server**
+
+```bash
 python manage.py runserver
-Run Tests
+```
 
-bash
-Copy code
+**Run Tests**
+
+```bash
 python manage.py test
-Frontend
-Start Development Server
+```
 
-bash
-Copy code
+### Frontend
+
+**Start Development Server**
+
+```bash
 npm run dev
-Run Linting
+```
 
-bash
-Copy code
+**Run Linting**
+
+```bash
 npm run lint
-Security Features
-JWT Authentication with refresh tokens
+```
 
-Fernet Encryption for API keys at rest
+---
 
-CORS Configuration and Input Validation
+## Security Features
 
-SQL Injection Prevention via Django ORM
+- JWT Authentication with refresh tokens
+- Fernet Encryption for API keys at rest
+- CORS Configuration and Input Validation
+- SQL Injection Prevention via Django ORM
 
-License
-MIT License - see LICENSE file for details.
+---
 
-Documentation
-Backend README
+## License
 
-Frontend README
+MIT License - see [LICENSE](LICENSE) file for details.
+
+## Documentation
+
+- [Backend README](Backend/README.md)
+- [Frontend README](Frontend/README.md)
 
 
